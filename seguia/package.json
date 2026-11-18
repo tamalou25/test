@@ -1,0 +1,37 @@
+{
+  "name": "seguia",
+  "productName": "Seguia",
+  "version": "1.0.0",
+  "description": "Séguia — jeu de gestion d'une oasis-relais",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.cjs",
+  "author": "Gary",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "preview": "vite preview --port 4173 --strictPort",
+    "build:win": "node scripts/build-win.mjs",
+    "build:linux-test": "node scripts/build-linux-test.mjs",
+    "smoke": "xvfb-run -a -s \"-screen 0 2560x1600x24\" node tests/e2e/smoke.mjs",
+    "recette": "xvfb-run -a -s \"-screen 0 2560x1600x24\" node tests/e2e/recette.mjs",
+    "journaux": "tsx tests/outils/journal-bot.ts etape 40 build/recette/journal-etape.json && tsx tests/outils/journal-bot.ts grenier 40 build/recette/journal-grenier.json",
+    "bots": "tsx tests/bots/strategies.ts 20261120 40"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@fontsource-variable/fraunces": "5.3.0",
+    "@fontsource-variable/inter": "5.3.0",
+    "@types/node": "22.20.5",
+    "@types/three": "0.187.0",
+    "electron": "45.3.4",
+    "three": "0.187.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.1"
+  }
+}

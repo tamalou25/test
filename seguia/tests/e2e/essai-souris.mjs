@@ -1,0 +1,28 @@
+import { ouvrirNavigateur, Pilote, ligne, idx } from './lib/pilote.mjs';
+const { page, erreurs, fermer } = await ouvrirNavigateur();
+const p = new Pilote(page);
+await p.nouvellePartie();
+const src = await p.etat(() => window.__seguia.etat().carte.sourceCase);
+const sx = src % 44, sz = Math.floor(src / 44);
+const canal = ligne(sx, sz, sx, sz + 9);
+await p.cadrer(canal, 30);
+await p.choisirOutil('eau', 'canal1');
+await p.tracer(canal);
+let r = await p.resume();
+console.log('après tracé : pièces', r.res.pieces, 'bilan', JSON.stringify(r.bilan));
+await p.choisirOutil('cultures', 'jardin');
+await p.cliquerCase(idx(sx + 1, sz + 2));
+// refus : poser sur le rocher du massif
+await p.page.mouse.move(120, 140);
+await new Promise((q) => setTimeout(q, 300));
+console.log('bulle sur le massif :', JSON.stringify(await p.messages()));
+await p.cliquerCase(idx(sx + 1, sz + 5));
+r = await p.resume();
+console.log('après jardins : bâtiments', r.batiments, 'pièces', r.res.pieces);
+await p.touche('Escape');
+await p.avancer(300);
+await p.cliquerCase(idx(sx + 1, sz + 2));
+await p.capture('build/captures/j3-jeu.png');
+r = await p.resume();
+console.log(JSON.stringify({ objectifs: r.objectifs, pas: r.pas, heure: r.heure, erreurs }));
+await fermer();

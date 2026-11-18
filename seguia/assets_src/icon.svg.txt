@@ -1,0 +1,2 @@
+L'icône assets_src/icon.png (512×512) est dessinée à la main en SVG (palmier, dune, séguia, soleil) et rendue en PNG par Chromium.
+Le build Windows la convertit en .ico multi-tailles avec ImageMagick.

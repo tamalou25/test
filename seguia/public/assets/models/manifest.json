@@ -1,0 +1,1346 @@
+{
+  "version": 1,
+  "modeles": {
+    "bassin": {
+      "nom": "bassin",
+      "fichier": "bassin.glb",
+      "emprise": [
+        3,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "bassin",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "eau",
+          "parent": "bassin",
+          "origine": [
+            0.0,
+            0.13,
+            0.0
+          ],
+          "materiaux": [
+            "eau"
+          ]
+        }
+      ],
+      "triangles": 925,
+      "budget": 1500,
+      "boite": {
+        "min": [
+          -1.42,
+          -0.1,
+          -0.8629
+        ],
+        "max": [
+          1.4063,
+          0.49,
+          0.8827
+        ]
+      }
+    },
+    "briqueterie": {
+      "nom": "briqueterie",
+      "fichier": "briqueterie.glb",
+      "emprise": [
+        2,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "briqueterie",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "lumiere"
+          ]
+        }
+      ],
+      "triangles": 1825,
+      "budget": 2500,
+      "boite": {
+        "min": [
+          -0.9171,
+          0.0,
+          -0.8729
+        ],
+        "max": [
+          0.9276,
+          0.66,
+          0.9258
+        ]
+      }
+    },
+    "brise_vent": {
+      "nom": "brise_vent",
+      "fichier": "brise_vent.glb",
+      "emprise": [
+        1,
+        1
+      ],
+      "noeuds": [
+        {
+          "nom": "brise_vent",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 174,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.5,
+          0.0,
+          -0.042
+        ],
+        "max": [
+          0.5,
+          0.5484,
+          0.042
+        ]
+      }
+    },
+    "buisson": {
+      "nom": "buisson",
+      "fichier": "buisson.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "buisson",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 196,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.1954,
+          0.0,
+          -0.1931
+        ],
+        "max": [
+          0.1771,
+          0.2319,
+          0.1732
+        ]
+      }
+    },
+    "caravanserail": {
+      "nom": "caravanserail",
+      "fichier": "caravanserail.glb",
+      "emprise": [
+        3,
+        3
+      ],
+      "noeuds": [
+        {
+          "nom": "caravanserail",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "lumiere",
+            "tissu"
+          ]
+        }
+      ],
+      "triangles": 6457,
+      "budget": 8000,
+      "boite": {
+        "min": [
+          -1.4,
+          0.0,
+          -1.4
+        ],
+        "max": [
+          1.4,
+          1.55,
+          1.42
+        ]
+      }
+    },
+    "chameau": {
+      "nom": "chameau",
+      "fichier": "chameau.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "chameau",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": []
+        },
+        {
+          "nom": "corps",
+          "parent": "chameau",
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "patte_avg",
+          "parent": "chameau",
+          "origine": [
+            0.068,
+            0.43,
+            0.15
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "patte_avd",
+          "parent": "chameau",
+          "origine": [
+            -0.068,
+            0.43,
+            0.15
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "patte_arg",
+          "parent": "chameau",
+          "origine": [
+            0.068,
+            0.43,
+            -0.19
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "patte_ard",
+          "parent": "chameau",
+          "origine": [
+            -0.068,
+            0.43,
+            -0.19
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "charge",
+          "parent": "chameau",
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 683,
+      "budget": 700,
+      "boite": {
+        "min": [
+          -0.2142,
+          0.0,
+          -0.316
+        ],
+        "max": [
+          0.2142,
+          0.6937,
+          0.5523
+        ]
+      }
+    },
+    "citerne": {
+      "nom": "citerne",
+      "fichier": "citerne.glb",
+      "emprise": [
+        2,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "citerne",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "eau",
+          "parent": "citerne",
+          "origine": [
+            0.0,
+            0.24,
+            0.0
+          ],
+          "materiaux": [
+            "eau"
+          ]
+        }
+      ],
+      "triangles": 896,
+      "budget": 1500,
+      "boite": {
+        "min": [
+          -0.63,
+          0.0,
+          -0.81
+        ],
+        "max": [
+          0.85,
+          0.89,
+          0.94
+        ]
+      }
+    },
+    "etal": {
+      "nom": "etal",
+      "fichier": "etal.glb",
+      "emprise": [
+        1,
+        1
+      ],
+      "noeuds": [
+        {
+          "nom": "etal",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "tissu"
+          ]
+        }
+      ],
+      "triangles": 196,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.4,
+          0.0,
+          -0.32
+        ],
+        "max": [
+          0.4,
+          0.6,
+          0.36
+        ]
+      }
+    },
+    "fanal": {
+      "nom": "fanal",
+      "fichier": "fanal.glb",
+      "emprise": [
+        1,
+        1
+      ],
+      "noeuds": [
+        {
+          "nom": "fanal",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "lumiere",
+            "tissu"
+          ]
+        }
+      ],
+      "triangles": 1166,
+      "budget": 1200,
+      "boite": {
+        "min": [
+          -0.4128,
+          0.0,
+          -0.3586
+        ],
+        "max": [
+          0.4334,
+          2.595,
+          0.4169
+        ]
+      }
+    },
+    "fontaine": {
+      "nom": "fontaine",
+      "fichier": "fontaine.glb",
+      "emprise": [
+        1,
+        1
+      ],
+      "noeuds": [
+        {
+          "nom": "fontaine",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "eau",
+          "parent": "fontaine",
+          "origine": [
+            0.0,
+            0.19,
+            0.0
+          ],
+          "materiaux": [
+            "eau"
+          ]
+        }
+      ],
+      "triangles": 471,
+      "budget": 900,
+      "boite": {
+        "min": [
+          -0.4,
+          0.0,
+          -0.44
+        ],
+        "max": [
+          0.4,
+          0.67,
+          0.38
+        ]
+      }
+    },
+    "habitant": {
+      "nom": "habitant",
+      "fichier": "habitant.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "habitant",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "robe",
+          "parent": "habitant",
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "tete",
+          "parent": "habitant",
+          "origine": [
+            0.0,
+            0.385,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 217,
+      "budget": 220,
+      "boite": {
+        "min": [
+          -0.1242,
+          0.0,
+          -0.0689
+        ],
+        "max": [
+          0.1242,
+          0.517,
+          0.0975
+        ]
+      }
+    },
+    "haie": {
+      "nom": "haie",
+      "fichier": "haie.glb",
+      "emprise": [
+        1,
+        1
+      ],
+      "noeuds": [
+        {
+          "nom": "haie",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 174,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.5,
+          0.0,
+          -0.221
+        ],
+        "max": [
+          0.5,
+          0.5431,
+          0.2197
+        ]
+      }
+    },
+    "hammam": {
+      "nom": "hammam",
+      "fichier": "hammam.glb",
+      "emprise": [
+        3,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "hammam",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "lumiere",
+            "tissu"
+          ]
+        },
+        {
+          "nom": "eau",
+          "parent": "hammam",
+          "origine": [
+            0.0,
+            0.085,
+            0.0
+          ],
+          "materiaux": [
+            "eau"
+          ]
+        }
+      ],
+      "triangles": 3733,
+      "budget": 4000,
+      "boite": {
+        "min": [
+          -1.35,
+          0.0,
+          -0.82
+        ],
+        "max": [
+          1.421,
+          1.22,
+          0.9
+        ]
+      }
+    },
+    "jarre": {
+      "nom": "jarre",
+      "fichier": "jarre.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "jarre",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 144,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.148,
+          0.0,
+          -0.115
+        ],
+        "max": [
+          0.1425,
+          0.3,
+          0.115
+        ]
+      }
+    },
+    "lanterne": {
+      "nom": "lanterne",
+      "fichier": "lanterne.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "lanterne",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "lumiere"
+          ]
+        }
+      ],
+      "triangles": 139,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.0736,
+          0.0,
+          -0.085
+        ],
+        "max": [
+          0.0736,
+          0.593,
+          0.085
+        ]
+      }
+    },
+    "maison_a": {
+      "nom": "maison_a",
+      "fichier": "maison_a.glb",
+      "emprise": [
+        2,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "maison_a",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "lumiere"
+          ]
+        }
+      ],
+      "triangles": 1483,
+      "budget": 1500,
+      "boite": {
+        "min": [
+          -0.88,
+          0.0,
+          -0.83
+        ],
+        "max": [
+          0.8993,
+          1.1841,
+          0.915
+        ]
+      }
+    },
+    "maison_b": {
+      "nom": "maison_b",
+      "fichier": "maison_b.glb",
+      "emprise": [
+        2,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "maison_b",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "lumiere",
+            "tissu"
+          ]
+        }
+      ],
+      "triangles": 1428,
+      "budget": 1500,
+      "boite": {
+        "min": [
+          -0.879,
+          0.0,
+          -0.82
+        ],
+        "max": [
+          0.91,
+          1.614,
+          0.92
+        ]
+      }
+    },
+    "maison_c": {
+      "nom": "maison_c",
+      "fichier": "maison_c.glb",
+      "emprise": [
+        2,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "maison_c",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "lumiere",
+            "tissu"
+          ]
+        }
+      ],
+      "triangles": 1387,
+      "budget": 1500,
+      "boite": {
+        "min": [
+          -0.9223,
+          0.0,
+          -0.82
+        ],
+        "max": [
+          0.86,
+          0.78,
+          0.84
+        ]
+      }
+    },
+    "noria": {
+      "nom": "noria",
+      "fichier": "noria.glb",
+      "emprise": [
+        1,
+        1
+      ],
+      "noeuds": [
+        {
+          "nom": "noria",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "roue",
+          "parent": "noria",
+          "origine": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 1490,
+      "budget": 1500,
+      "boite": {
+        "min": [
+          -0.44,
+          0.0,
+          -0.4275
+        ],
+        "max": [
+          0.44,
+          0.9189,
+          0.425
+        ]
+      }
+    },
+    "palmier": {
+      "nom": "palmier",
+      "fichier": "palmier.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "palmier",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": []
+        },
+        {
+          "nom": "tronc",
+          "parent": "palmier",
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "palmes",
+          "parent": "palmier",
+          "origine": [
+            0.16,
+            2.62,
+            0.04
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 344,
+      "budget": 350,
+      "boite": {
+        "min": [
+          -1.3345,
+          0.0,
+          -1.4012
+        ],
+        "max": [
+          1.4923,
+          3.0496,
+          1.506
+        ]
+      }
+    },
+    "panier": {
+      "nom": "panier",
+      "fichier": "panier.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "panier",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 148,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.1956,
+          0.0,
+          -0.156
+        ],
+        "max": [
+          0.1956,
+          0.2047,
+          0.156
+        ]
+      }
+    },
+    "puits": {
+      "nom": "puits",
+      "fichier": "puits.glb",
+      "emprise": [
+        1,
+        1
+      ],
+      "noeuds": [
+        {
+          "nom": "puits",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "bras",
+          "parent": "puits",
+          "origine": [
+            0.04,
+            0.6,
+            -0.15
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 878,
+      "budget": 900,
+      "boite": {
+        "min": [
+          -0.41,
+          0.0,
+          -0.4017
+        ],
+        "max": [
+          0.375,
+          0.7397,
+          0.43
+        ]
+      }
+    },
+    "repartiteur": {
+      "nom": "repartiteur",
+      "fichier": "repartiteur.glb",
+      "emprise": [
+        1,
+        1
+      ],
+      "noeuds": [
+        {
+          "nom": "repartiteur",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "eau",
+          "parent": "repartiteur",
+          "origine": [
+            0.0,
+            0.085,
+            0.0
+          ],
+          "materiaux": [
+            "eau"
+          ]
+        }
+      ],
+      "triangles": 908,
+      "budget": 1000,
+      "boite": {
+        "min": [
+          -0.44,
+          0.0,
+          -0.44
+        ],
+        "max": [
+          0.44,
+          0.13,
+          0.44
+        ]
+      }
+    },
+    "rocher_a": {
+      "nom": "rocher_a",
+      "fichier": "rocher_a.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "rocher_a",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 165,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.3687,
+          0.0,
+          -0.3478
+        ],
+        "max": [
+          0.4493,
+          0.7831,
+          0.3112
+        ]
+      }
+    },
+    "rocher_b": {
+      "nom": "rocher_b",
+      "fichier": "rocher_b.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "rocher_b",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 157,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.5785,
+          0.0,
+          -0.4008
+        ],
+        "max": [
+          0.6182,
+          0.3943,
+          0.3931
+        ]
+      }
+    },
+    "rocher_c": {
+      "nom": "rocher_c",
+      "fichier": "rocher_c.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "rocher_c",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 142,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.3733,
+          0.0,
+          -0.2989
+        ],
+        "max": [
+          0.4697,
+          0.5736,
+          0.4248
+        ]
+      }
+    },
+    "roseaux": {
+      "nom": "roseaux",
+      "fichier": "roseaux.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "roseaux",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 190,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.2193,
+          0.0,
+          -0.1749
+        ],
+        "max": [
+          0.2688,
+          0.3473,
+          0.2038
+        ]
+      }
+    },
+    "sacs": {
+      "nom": "sacs",
+      "fichier": "sacs.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "sacs",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 160,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.2157,
+          0.0,
+          -0.1454
+        ],
+        "max": [
+          0.2211,
+          0.3334,
+          0.1005
+        ]
+      }
+    },
+    "sechoir": {
+      "nom": "sechoir",
+      "fichier": "sechoir.glb",
+      "emprise": [
+        2,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "sechoir",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc",
+            "tissu"
+          ]
+        }
+      ],
+      "triangles": 2371,
+      "budget": 2500,
+      "boite": {
+        "min": [
+          -0.93,
+          0.0,
+          -0.92
+        ],
+        "max": [
+          0.93,
+          1.1502,
+          0.9195
+        ]
+      }
+    },
+    "source": {
+      "nom": "source",
+      "fichier": "source.glb",
+      "emprise": [
+        2,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "source",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        },
+        {
+          "nom": "eau",
+          "parent": "source",
+          "origine": [
+            0.0,
+            0.11,
+            0.0
+          ],
+          "materiaux": [
+            "eau"
+          ]
+        }
+      ],
+      "triangles": 679,
+      "budget": 1500,
+      "boite": {
+        "min": [
+          -0.874,
+          0.0,
+          -0.8899
+        ],
+        "max": [
+          0.8385,
+          0.4591,
+          0.9312
+        ]
+      }
+    },
+    "tapis": {
+      "nom": "tapis",
+      "fichier": "tapis.glb",
+      "emprise": null,
+      "noeuds": [
+        {
+          "nom": "tapis",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 62,
+      "budget": 200,
+      "boite": {
+        "min": [
+          -0.25,
+          0.0,
+          -0.44
+        ],
+        "max": [
+          0.25,
+          0.016,
+          0.44
+        ]
+      }
+    },
+    "tente": {
+      "nom": "tente",
+      "fichier": "tente.glb",
+      "emprise": [
+        2,
+        2
+      ],
+      "noeuds": [
+        {
+          "nom": "tente",
+          "parent": null,
+          "origine": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "materiaux": [
+            "tissu",
+            "vc"
+          ]
+        }
+      ],
+      "triangles": 356,
+      "budget": 400,
+      "boite": {
+        "min": [
+          -0.8939,
+          0.0,
+          -0.808
+        ],
+        "max": [
+          0.9096,
+          0.745,
+          0.92
+        ]
+      }
+    }
+  }
+}

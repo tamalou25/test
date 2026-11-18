@@ -1,0 +1,40 @@
+SÉGUIA — version 1.0.0
+Un jeu de gestion d'oasis-relais. Solo, hors ligne, en français.
+
+POUR JOUER
+  1. Décompressez tout le dossier « Seguia » où vous voulez (Bureau, Documents…).
+  2. Ouvrez le dossier et double-cliquez sur « Seguia.exe ».
+  3. Au premier lancement, Windows peut afficher « Windows a protégé votre ordinateur »,
+     car le jeu n'est pas signé. Cliquez sur « Informations complémentaires »,
+     puis sur « Exécuter quand même ».
+  Aucune installation, aucun compte, aucune connexion Internet.
+
+CONFIGURATION
+  Windows 10 ou 11 en 64 bits. Une carte graphique récente, même intégrée, suffit.
+  Si l'image saccade : Menu (Échap) > Réglages > Image > « Léger ».
+  Écran conseillé : 1366 × 768 ou plus. F11 : plein écran.
+
+COMMANDES
+  Clic gauche : poser, tracer en glissant, sélectionner
+  Clic droit ou Échap : annuler l'outil en cours (Échap ouvre aussi le menu)
+  Glisser clic droit : tourner la vue      Molette : zoom
+  Z Q S D ou flèches : déplacer la vue     A / E : tourner
+  Espace : pause      1, 2, 3 : vitesses   R : tourner un bâtiment
+  Ctrl+Z : annuler la dernière construction
+  V : vue de l'eau    B : vue du vent      H : aide
+  F5 / F9 : sauvegarde et chargement rapides
+
+SAUVEGARDES
+  La partie est enregistrée toute seule à chaque nouveau jour, au retour au menu
+  et quand vous fermez la fenêtre.
+  Trois emplacements manuels sont disponibles dans Menu > Sauvegarder.
+  Les fichiers sont dans : %APPDATA%\Seguia\saves
+  (collez ce chemin dans la barre d'adresse de l'Explorateur de fichiers).
+  Chaque emplacement garde une copie de secours de sa version précédente (.bak).
+  Si un fichier est abîmé, le jeu le dit et propose de charger cette copie.
+
+DÉSINSTALLER
+  Supprimez le dossier « Seguia ». Pour effacer aussi les sauvegardes et les réglages,
+  supprimez le dossier %APPDATA%\Seguia.
+
+Crédits et licences : voir CREDITS.md dans ce dossier.
