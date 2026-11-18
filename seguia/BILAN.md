@@ -74,7 +74,28 @@ Voir la section 5.
 
 ## 5. Recette de la version distribuable
 
-RECETTE_A_COMPLETER
+**51 vérifications réussies sur 51** (`npm run recette`, détail dans `release/recette-rapport.md`).
+
+Méthode : le ZIP Windows est extrait dans un dossier à espaces et accents et son contenu est contrôlé. Comme il n'y a pas de Windows ici, c'est le paquet Linux des mêmes sources qui est lancé et piloté ; son `app.asar` (code et ressources du jeu) est identique, octet pour octet, à celui du ZIP Windows. Les constructions se font à la souris ; le temps avance par un crochet de test, le rendu logiciel étant trop lent pour attendre.
+
+| Vérification | Résultat |
+|---|---|
+| Contenu du ZIP (exécutable Windows 64 bits, notice, crédits, licences) | OK |
+| Menu → nouvelle partie → séguia et jardin posés à la souris | OK |
+| Placement refusé : cause et remède affichés | OK |
+| Premier effet visible (jardin irrigué, sol qui verdit) | 9 s de jeu à vitesse ×1 |
+| Sauvegarde pendant qu'une caravane boit (39,6 u sur 88) → fermeture → relance → chargement | Empreinte d'état identique |
+| Caravane comptée une fois, paiement appliqué une fois | OK (+46 pièces = 16 de paiement + 30 de prime de palier) |
+| Fermer la fenêtre enregistre la partie | OK |
+| Fichier tronqué : signalé illisible, copie de secours chargée | OK |
+| Fichier modifié : refusé avec un message clair | OK |
+| Stratégie « étape » rejouée dans l'application jusqu'à la victoire | Empreinte identique à la référence, victoire jour 35 |
+| Stratégie « grenier », depuis le même état initial | Empreinte identique à la référence, victoire jour 31 |
+| Écrans de palier, de vocation et de victoire | Affichés et fermés par de vrais clics |
+| Interface à 1366 × 768 et 1920 × 1080, caméra à trois distances | Rien ne déborde, rien ne se recouvre |
+| Erreurs JavaScript pendant toute la recette | Aucune |
+
+Mesure de fluidité, à lire avec prudence : 11 à 12 images par seconde, oasis du jour 40, vue moyenne, 1366 × 768, réglages « Léger » et « Équilibré », **en rendu logiciel sur 4 cœurs sans carte graphique**. Cette scène demande 209 appels de dessin et 343 000 triangles, au-dessus des 150 et 300 000 visés au départ.
 
 ## 6. Délégations
 
